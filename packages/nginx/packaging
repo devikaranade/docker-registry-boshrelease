@@ -38,6 +38,7 @@ export ZLIB_LIB=/var/vcap/packages/nginx/lib
 
 pushd nginx-1.10.1
     ./configure \
+    --with-cc-opt="-Wno-error" \
     --user=vcap --group=vcap \
     --prefix=${BOSH_INSTALL_TARGET} \
     --with-ld-opt="-Wl,-rpath,$OPENSSL_LIB,-rpath,$ZLIB_LIB" \
