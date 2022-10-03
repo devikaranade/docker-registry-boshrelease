@@ -73,6 +73,6 @@ variables:
 
 releases:
 - name:    docker-registry
-  version: 3.5.2
-  url:     https://github.com/cloudfoundry-community/docker-registry-boshrelease/releases/download/v3.5.2/docker-registry-3.5.2.tgz
-  sha1:    2f4d1cfd10955a05762c2d119e582ba8ea8c3241
+  version: 3.6.0
+  url:     https://github.com/cloudfoundry-community/docker-registry-boshrelease/releases/download/v3.6.0/docker-registry-3.6.0.tgz
+  sha1:    2f09ca4f50c0129fdb8a7b84fe6d74b085c109c4
