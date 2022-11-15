@@ -10,10 +10,10 @@ CPUS=$(grep -c ^processor /proc/cpuinfo)
 # $BOSH_INSTALL_TARGET - where you copy/install files to be included in package
 export HOME=/var/vcap
 
-# from http://zlib.net/zlib-1.2.8.tar.gz
+# from http://zlib.net/zlib-1.2.13.tar.gz
 echo "Extracting zlib ... "
-tar xzvf nginx/zlib-1.2.8.tar.gz
-export ZLIB_SRC=${BOSH_COMPILE_TARGET}/zlib-1.2.8
+tar xzvf nginx/zlib-1.2.13.tar.gz
+export ZLIB_SRC=${BOSH_COMPILE_TARGET}/zlib-1.2.13
 
 # from https://www.openssl.org/source/openssl-1.0.2h.tar.gz
 echo "Extracting openssl ... "
