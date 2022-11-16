@@ -15,11 +15,11 @@ export HOME=/var/vcap
 #       download page: http://redis.io/download
 #
 
-# from http://download.redis.io/releases/redis-3.2.3.tar.gz
+# from https://github.com/redis/redis/releases/tag/7.0.5
 echo "Extracting redis server ..."
-tar xzf redis/redis-3.2.3.tar.gz
+tar xzf redis/redis-7.0.5.tar.gz
 
 echo "Building redis ..."
-pushd redis-3.2.3
+pushd redis-7.0.5
   make install PREFIX=${BOSH_INSTALL_TARGET}
 popd
