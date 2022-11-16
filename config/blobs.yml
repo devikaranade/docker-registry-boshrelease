@@ -82,6 +82,9 @@ nginx/pcre-8.39.tar.gz:
   size: 2062258
   object_id: 3c994942-80e4-4d62-ace3-62635d94fde7
   sha: b3aec1f643d9701841e2f9d57ac121a7ff448fc8
+nginx/pcre2-10.40.tar.gz:
+  size: 2359622
+  sha: sha256:ded42661cab30ada2e72ebff9e725e745b4b16ce831993635136f2ef86177724
 nginx/zlib-1.2.8.tar.gz:
   size: 571091
   object_id: 51d5b062-3987-42b6-a92d-d53a192b60be

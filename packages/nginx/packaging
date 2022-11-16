@@ -20,9 +20,9 @@ echo "Extracting openssl ... "
 tar xvf nginx/openssl-1.0.2h.tar.gz
 export OPENSSL_SRC=${BOSH_COMPILE_TARGET}/openssl-1.0.2h
 
-# from ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-8.39.tar.gz
+# from https://github.com/PCRE2Project/pcre2/releases/pcre2-10.40.tar.gz
 echo "Extracting pcre..."
-tar xzvf nginx/pcre-8.39.tar.gz
+tar xzvf nginx/pcre2-10.40.tar.gz
 
 # from https://github.com/openresty/headers-more-nginx-module/archive/v0.30.tar.gz
 echo "Extracting headers-more module..."
@@ -42,7 +42,7 @@ pushd nginx-1.10.1
     --user=vcap --group=vcap \
     --prefix=${BOSH_INSTALL_TARGET} \
     --with-ld-opt="-Wl,-rpath,$OPENSSL_LIB,-rpath,$ZLIB_LIB" \
-    --with-pcre=../pcre-8.39 \
+    --with-pcre=../pcre2-10.40 \
     --with-pcre-jit \
     --with-zlib=${ZLIB_SRC} \
     --with-openssl=${OPENSSL_SRC} \

@@ -1,0 +1,82 @@
+---
+name: docker-registry
+
+stemcells:
+  - alias:   default
+    os:      ubuntu-bionic
+    version: latest
+
+instance_groups:
+  - name: docker-registry
+    instances: 1
+    vm_type: default
+    persistent_disk: 10_240
+    stemcell: default
+    azs: [z1]
+    networks:
+      - name: default
+    jobs:
+      - name: registry
+        release: docker-registry
+      - name: proxy
+        release: docker-registry
+        custom_provider_definitions:
+        - name: registry
+          type: https
+          shared: true
+        provides:
+          registry:
+            aliases:
+            - domain: docker-registry.bosh
+              health_filter: "healthy"
+      - name: cache
+        release: docker-registry
+    properties:
+      docker:
+        cache:
+          host: 127.0.0.1
+          redis:
+            maxmemory: "2g"
+        proxy:
+          auth_basic:
+            admin: "{PLAIN}((docker_registry_password))"
+          only_auth_for_admin: false
+          ssl:
+            cert: ((docker_registry_certificate.certificate))
+            key: ((docker_registry_certificate.private_key))
+
+update:
+  canaries: 1
+  max_in_flight: 50
+  serial: false
+  canary_watch_time: 1000-60000
+  update_watch_time: 1000-60000
+
+variables:
+  - name: docker_registry_password
+    type: password
+  - name: docker_registry_ca
+    type: certificate
+    options:
+      is_ca: true
+      common_name: docker_registry_ca
+  - name: docker_registry_certificate
+    type: certificate
+    options:
+      ca: docker_registry_ca
+      common_name: docker_registry
+      extended_key_usage:
+        - client_auth
+        - server_auth
+      alternative_names:
+      - docker-registry.bosh
+
+releases:
+- name: "node-exporter"
+  version: "5.0.0"
+  url: "https://bosh.io/d/github.com/cloudfoundry-community/node-exporter-boshrelease?v=5.0.0"
+  sha1: "cea1edc938873b7204b889173002e0e9fa813e54"
+- name:    docker-registry
+  version: 3.6.0+dev.18
+  #url:     https://github.com/cloudfoundry-community/docker-registry-boshrelease/releases/download/v3.6.0/docker-registry-3.6.0.tgz
+  #sha1:    2f09ca4f50c0129fdb8a7b84fe6d74b085c109c4
