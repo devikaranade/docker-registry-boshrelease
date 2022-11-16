@@ -18,6 +18,24 @@ golang/go1.11.linux-amd64.tar.gz:
   size: 127163815
   object_id: 68685d76-847e-4414-68c4-3fcd60d35185
   sha: 8ffb718cab4371df3495d8f6c0b15c7e6dc28fea
+nfs-bionic-debs/keyutils_1.5.9-9.2ubuntu2_amd64.deb:
+  size: 47896
+  sha: sha256:223a7160b6e2680d2b1f43abb067e0ccc08906bb2c5448ad4b3065f38309bbb5
+nfs-bionic-debs/libevent-2.1-6_2.1.18-stable-4build1_amd64.deb:
+  size: 133328
+  sha: sha256:76bc94b3bb4356673c61dd2a4a7b06f40de21dab051aa4b31282aa9d7798b383
+nfs-bionic-debs/libnfsidmap2_0.25-5.1_amd64.deb:
+  size: 27180
+  sha: sha256:ae6eaf479efa010b313b4e0cf18812e3ca6eb50b6392b7b52e854d6acafe866b
+nfs-bionic-debs/nfs-common_1.3.4-2.1ubuntu5_amd64.deb:
+  size: 205028
+  sha: sha256:c723cb998fbc3a48cfb9beb0a272e1ab1c6325be3415ec856140a03fb03cf26b
+nfs-bionic-debs/nfs-kernel-server_1.3.4-2.1ubuntu5_amd64.deb:
+  size: 93976
+  sha: sha256:de6bf0a2d81674463ba37804d491c374e59f3f35c72adc06db0b7af6667927ac
+nfs-bionic-debs/rpcbind_0.2.3-0.6_amd64.deb:
+  size: 40644
+  sha: sha256:ca91f3d0affb350aaff984105ab12ebe4ecf7b7ff13351b95c79ddc114e86c2d
 nfs-trusty-debs/libevent-2.0-5_2.0.21-stable-1ubuntu1.14.04.2_amd64.deb:
   size: 126342
   object_id: 408755bc-7db8-4c7a-6245-b9a70ed58742

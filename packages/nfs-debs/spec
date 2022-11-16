@@ -17,3 +17,10 @@ files:
   - nfs-xenial-debs/nfs-common_1.2.8-9ubuntu12_amd64.deb
   - nfs-xenial-debs/nfs-kernel-server_1.2.8-9ubuntu12_amd64.deb
 
+  #bionic
+  - nfs-bionic-debs/rpcbind_0.2.3-0.6_amd64.deb
+  - nfs-bionic-debs/keyutils_1.5.9-9.2ubuntu2_amd64.deb
+  - nfs-bionic-debs/libevent-2.1-6_2.1.18-stable-4build1_amd64.deb
+  - nfs-bionic-debs/libnfsidmap2_0.25-5.1_amd64.deb
+  - nfs-bionic-debs/nfs-common_1.3.4-2.1ubuntu5_amd64.deb
+  - nfs-bionic-debs/nfs-kernel-server_1.3.4-2.1ubuntu5_amd64.deb
