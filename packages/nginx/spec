@@ -3,7 +3,7 @@ name: nginx
 
 files:
   - nginx/pcre2-10.40.tar.gz                          # https://github.com/PCRE2Project/pcre2/releases/pcre2-10.40.tar.gz
-  - nginx/headers-more-nginx-module-0.30.tar.gz       # https://github.com/openresty/headers-more-nginx-module/archive/v0.30.tar.gz
-  - nginx/openssl-1.0.2h.tar.gz                       # http://openssl.org/source/openssl-1.0.2h.tar.gz
-  - nginx/zlib-1.2.13.tar.gz                           # https://github.com/madler/zlib/releases/zlib-1.2.13.tar.gz
-  - nginx/nginx-1.10.1.tar.gz                     # http://nginx.org/download/nginx-1.10.1.tar.gz
+  - nginx/headers-more-nginx-module-0.34.tar.gz       # https://github.com/openresty/headers-more-nginx-module/archive/v0.30.tar.gz
+  - nginx/openssl-1.1.1s.tar.gz                       # http://openssl.org/source/openssl-1.0.2h.tar.gz
+  - nginx/zlib-1.2.13.tar.gz                          # https://github.com/madler/zlib/releases/zlib-1.2.13.tar.gz
+  - nginx/nginx-1.23.2.tar.gz                         # http://nginx.org/download/nginx-1.10.1.tar.gz

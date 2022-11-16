@@ -15,28 +15,28 @@ echo "Extracting zlib ... "
 tar xzvf nginx/zlib-1.2.13.tar.gz
 export ZLIB_SRC=${BOSH_COMPILE_TARGET}/zlib-1.2.13
 
-# from https://www.openssl.org/source/openssl-1.0.2h.tar.gz
+# from https://www.openssl.org/source/openssl-1.1.1s.tar.gz
 echo "Extracting openssl ... "
-tar xvf nginx/openssl-1.0.2h.tar.gz
-export OPENSSL_SRC=${BOSH_COMPILE_TARGET}/openssl-1.0.2h
+tar xvf nginx/openssl-1.1.1s.tar.gz
+export OPENSSL_SRC=${BOSH_COMPILE_TARGET}/openssl-1.1.1s
 
 # from https://github.com/PCRE2Project/pcre2/releases/pcre2-10.40.tar.gz
 echo "Extracting pcre..."
 tar xzvf nginx/pcre2-10.40.tar.gz
 
-# from https://github.com/openresty/headers-more-nginx-module/archive/v0.30.tar.gz
+# from https://github.com/openresty/headers-more-nginx-module/archive/v0.34.tar.gz
 echo "Extracting headers-more module..."
-tar xzvf nginx/headers-more-nginx-module-0.30.tar.gz
+tar xzvf nginx/headers-more-nginx-module-0.34.tar.gz
 
-# from http://nginx.org/download/nginx-1.10.1.tar.gz
+# from http://nginx.org/download/nginx-1.23.2.tar.gz
 echo "Extracting nginx..."
-tar xzvf nginx/nginx-1.10.1.tar.gz
+tar xzvf nginx/nginx-1.23.2.tar.gz
 
 echo "Building nginx..."
 export OPENSSL_LIB=/var/vcap/packages/nginx/lib
 export ZLIB_LIB=/var/vcap/packages/nginx/lib
 
-pushd nginx-1.10.1
+pushd nginx-1.23.2
     ./configure \
     --with-cc-opt="-Wno-error" \
     --user=vcap --group=vcap \
@@ -46,7 +46,7 @@ pushd nginx-1.10.1
     --with-pcre-jit \
     --with-zlib=${ZLIB_SRC} \
     --with-openssl=${OPENSSL_SRC} \
-    --add-module=../headers-more-nginx-module-0.30 \
+    --add-module=../headers-more-nginx-module-0.34 \
     --with-http_realip_module \
     --with-http_ssl_module
     make -j $CPUS install
