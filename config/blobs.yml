@@ -24,6 +24,9 @@ golang/go1.11.linux-amd64.tar.gz:
   size: 127163815
   object_id: 68685d76-847e-4414-68c4-3fcd60d35185
   sha: 8ffb718cab4371df3495d8f6c0b15c7e6dc28fea
+golang/go1.19.3.linux-amd64.tar.gz:
+  size: 148907134
+  sha: sha256:74b9640724fd4e6bb0ed2a1bc44ae813a03f1e72a4c76253e2d5c015494430ba
 nfs-bionic-debs/keyutils_1.5.9-9.2ubuntu2_amd64.deb:
   size: 47896
   sha: sha256:223a7160b6e2680d2b1f43abb067e0ccc08906bb2c5448ad4b3065f38309bbb5
