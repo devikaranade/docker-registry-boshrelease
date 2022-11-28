@@ -77,6 +77,6 @@ releases:
   url: "https://bosh.io/d/github.com/cloudfoundry-community/node-exporter-boshrelease?v=5.0.0"
   sha1: "cea1edc938873b7204b889173002e0e9fa813e54"
 - name:    docker-registry
-  version: 3.6.0+dev.29
+  version: 3.6.0+dev.30
   #url:     https://github.com/cloudfoundry-community/docker-registry-boshrelease/releases/download/v3.6.0/docker-registry-3.6.0.tgz
   #sha1:    2f09ca4f50c0129fdb8a7b84fe6d74b085c109c4

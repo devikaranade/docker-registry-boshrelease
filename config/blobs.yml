@@ -13,6 +13,9 @@ docker/distribution-2.7.0.tar.gz:
   size: 1996485
   object_id: caa418c9-8491-4672-7c3d-b9acab89c092
   sha: 43cb56b3c94492d3f73ec83b607caed10821aadb
+docker/distribution-2.8.0.tar.gz:
+  size: 2007107
+  sha: sha256:936ba59f718107dd94ebdcfad23ee67cfcb7a6f7191fd7602b68efec4534ce04
 docker/docker-1.11.0.tgz:
   size: 20520756
   object_id: 1333443e-98ee-465a-9e49-6fd12f3d2052
