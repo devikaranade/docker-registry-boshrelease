@@ -16,6 +16,9 @@ docker/distribution-2.7.0.tar.gz:
 docker/distribution-2.8.0.tar.gz:
   size: 2007107
   sha: sha256:936ba59f718107dd94ebdcfad23ee67cfcb7a6f7191fd7602b68efec4534ce04
+docker/distribution-2.8.1.tar.gz:
+  size: 2007611
+  sha: sha256:a45fd1412482ede198e71f20f4ad6d63ac8208251ac93856c401ff926d7220e5
 docker/docker-1.11.0.tgz:
   size: 20520756
   object_id: 1333443e-98ee-465a-9e49-6fd12f3d2052
@@ -32,6 +35,9 @@ golang/go1.12.linux-amd64.tar.gz:
 golang/go1.13.linux-amd64.tar.gz:
   size: 120050424
   sha: sha256:68a2297eb099d1a76097905a2ce334e3155004ec08cdea85f24527be3c48e856
+golang/go1.16.15.linux-amd64.tar.gz:
+  size: 129158859
+  sha: sha256:77c782a633186d78c384f972fb113a43c24be0234c42fef22c2d8c4c4c8e7475
 nfs-bionic-debs/keyutils_1.5.9-9.2ubuntu2_amd64.deb:
   size: 47896
   sha: sha256:223a7160b6e2680d2b1f43abb067e0ccc08906bb2c5448ad4b3065f38309bbb5
